@@ -1,5 +1,8 @@
 from django.urls import path
 from . import views
+import os
+import sys
+import logging
 
 urlpatterns = [
     path('users/', views.user_list, name='user_list'),
@@ -10,3 +13,11 @@ urlpatterns = [
     path('tasks/', views.task_list, name='task_list'),
     path('userstories/', views.userstory_list, name='userstory_list'),
 ]
+
+# Log available URL paths
+for url in urlpatterns:
+    if hasattr(url, 'url_patterns'):
+        for included_url in url.url_patterns:
+            logging.info(f"URL pattern: {included_url.pattern}")
+    else:
+        logging.info(f"URL pattern: {url.pattern}")
