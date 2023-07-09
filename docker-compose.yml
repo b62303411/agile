@@ -4,8 +4,6 @@ services:
   agile:
     image: agile:latest
     container_name: agile
-    ports:
-      - "80:80"
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.agile.rule=Host(`agile.yoda.vm`)"
