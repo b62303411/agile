@@ -75,7 +75,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'agile.wsgi.application'
+WSGI_APPLICATION = 'AgileProjectManagement.wsgi.application'
 
 
 # Database
