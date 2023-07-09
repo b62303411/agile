@@ -15,4 +15,4 @@ COPY . /app
 EXPOSE 80
 
 # command to run app when container is started
-CMD ["python","manage.py"]
+CMD ["python","manage.py runserver"]
