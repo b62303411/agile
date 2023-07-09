@@ -1,3 +1,9 @@
+import os
+import logging
+# Set up logging
+logging.basicConfig(level=logging.INFO)
+logging.info('Loading settings...')
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -23,3 +29,5 @@ LOGGING = {
 }
 
 ALLOWED_HOSTS = ['*']
+
+logging.info('Settings loaded successfully.')
