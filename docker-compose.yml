@@ -11,11 +11,14 @@ services:
       - "traefik.http.services.agile.loadbalancer.server.port=80"
     networks:
       - traefik_proxy
+      - postgresql_pg_network
 
 volumes:
   registry-data:
 
 networks:
+  postgresql_pg_network:
+    external: true
   traefik_proxy:
     external: true
 
