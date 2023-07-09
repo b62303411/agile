@@ -8,3 +8,4 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+ALLOWED_HOSTS = ['*']
