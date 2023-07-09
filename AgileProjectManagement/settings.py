@@ -29,5 +29,6 @@ LOGGING = {
 }
 
 ALLOWED_HOSTS = ['*']
+ROOT_URLCONF = 'AgileProjectManagement.urls'
 
 logging.info('Settings loaded successfully.')
