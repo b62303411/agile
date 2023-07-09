@@ -8,7 +8,7 @@ services:
       - "traefik.enable=true"
       - "traefik.http.routers.agile.rule=Host(`agile.yoda.vm`)"
       - "traefik.http.routers.agile.entrypoints=web"
-      - "traefik.http.services.agile.loadbalancer.server.port=80"
+      - "traefik.http.services.agile.loadbalancer.server.port=8000"
     networks:
       - traefik_proxy
       - postgresql_pg_network
