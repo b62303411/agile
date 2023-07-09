@@ -56,7 +56,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'agile.urls'
+ROOT_URLCONF = 'AgileProjectManagement.urls'
 
 TEMPLATES = [
     {
