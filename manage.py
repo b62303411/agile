@@ -2,7 +2,7 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-
+import logging
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'AgileProjectManagement.settings')
@@ -14,6 +14,8 @@ def main():
             "available on your PYTHONPATH environment variable? Did you "
             "forget to activate a virtual environment?"
         ) from exc
+    logging.basicConfig(level=logging.INFO)
+    logging.info('Starting Django application...')
     execute_from_command_line(sys.argv)
 
 if __name__ == '__main__':
