@@ -1,7 +1,10 @@
 from django.shortcuts import render
 from .models import User, Initiative, Epic, Project, Sprint, Task, UserStory
-
+import os
+import sys
+import logging
 def user_list(request):
+    logging.info(f"user_list: {request}")
     users = User.objects.all()
     return render(request, 'AgileApp/user_list.html', {'users': users})
 
