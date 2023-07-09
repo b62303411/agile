@@ -5,6 +5,9 @@ class User(models.Model):
     password = models.CharField(max_length=50)
     email = models.EmailField()
 
+    class Meta:
+        app_label = 'AgileApp'
+
 class Initiative(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
