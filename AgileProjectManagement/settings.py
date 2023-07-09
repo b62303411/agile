@@ -3,6 +3,15 @@ import logging
 # Set up logging
 logging.basicConfig(level=logging.INFO)
 logging.info('Loading settings...')
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    # Add your custom apps here
+]
 
 DATABASES = {
     'default': {
