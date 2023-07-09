@@ -15,4 +15,4 @@ COPY . /app
 EXPOSE 80
 
 # command to run app when container is started
-CMD ["python","real_estate_search.py"]
+CMD ["python","main.py"]
