@@ -17,10 +17,10 @@ INSTALLED_APPS = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'AgileProjectManagement',
-        'USER': '<your_postgres_user>',
-        'PASSWORD': '<your_postgres_password>',
-        'HOST': 'localhost',
+        'NAME': 'agile',
+        'USER': 'odoo',
+        'PASSWORD': 'b24isk3',
+        'HOST': 'db',
         'PORT': '5432',
     }
 }
