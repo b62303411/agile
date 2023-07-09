@@ -12,7 +12,7 @@ RUN pip install -r requirements.txt
 COPY . /app
 
 # expose port for application
-EXPOSE 80
+EXPOSE 8000
 
 # command to run app when container is started
 CMD ["python","manage.py","runserver"]
