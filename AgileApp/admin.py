@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import User, Initiative, Epic, Project, Sprint, Task, UserStory
 class UserAdmin(admin.ModelAdmin):
-    list_display = ('username', 'email', 'date_joined')
+    list_display = ('username', 'email')
 
 # Register your models here.
 admin.site.register(User, UserAdmin)
