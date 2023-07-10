@@ -25,7 +25,7 @@ SECRET_KEY = 'mp5%_t^)!xm6p&bck3o%pmbt!aq^#69=_@i4v^044fe(r0j#-l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'agile.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'agile',
+        'USER': 'odoo',
+        'PASSWORD': 'b24isk3',
+        'HOST': 'db',
+        'PORT': '5432',
     }
 }
 
