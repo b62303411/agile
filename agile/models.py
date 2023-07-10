@@ -6,7 +6,7 @@ class User(models.Model):
     email = models.EmailField()
 
     class Meta:
-        app_label = 'AgileApp'
+        app_label = 'agile'
 
 class Initiative(models.Model):
     name = models.CharField(max_length=100)
